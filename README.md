@@ -19,12 +19,19 @@ Includes a simple image-based interface using Streamlit
 ### Tech Stack:
 
 Programming Language: Python 3.10
+
 Face Detection: YOLOv8n-face (Ultralytics)
+
 Face Embedding: FaceNet (via keras-facenet)
+
 Classifier: KNN / SVM (scikit-learn)
+
 Image Processing: OpenCV
+
 Model Storage: Joblib and NumPy
+
 Evaluation Metric: Accuracy
+
 User Interface: Streamlit
 
 ### Folder Structure:
