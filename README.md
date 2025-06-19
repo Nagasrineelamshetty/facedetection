@@ -2,7 +2,7 @@
 
 This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps. The project was developed by Nagasri as part of an internship assignment.
 
-Features:
+### Features:
 
 Face detection using YOLOv8n-face model
 
@@ -16,7 +16,7 @@ Achieved 100% accuracy on a small test dataset
 
 Includes a simple image-based interface using Streamlit
 
-Tech Stack
+### Tech Stack:
 
 Programming Language: Python 3.10
 Face Detection: YOLOv8n-face (Ultralytics)
@@ -27,7 +27,7 @@ Model Storage: Joblib and NumPy
 Evaluation Metric: Accuracy
 User Interface: Streamlit
 
-Folder Structure:
+### Folder Structure:
 
 detect_faces_yolo.py – Detects and crops faces using YOLOv8
 
