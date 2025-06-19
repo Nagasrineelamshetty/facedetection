@@ -14,8 +14,6 @@ Trained on images with variations: normal face, masked face, and face with a cap
 
 Achieved 100% accuracy on a small test dataset
 
-Includes a simple image-based interface using Streamlit
-
 ### Tech Stack:
 
 Programming Language: Python 3.10
