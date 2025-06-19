@@ -2,6 +2,9 @@
 
 This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps.
 
+### Output:
+![Output]("C:\Users\Nagasri\OneDrive\Pictures\Screenshots 1\Screenshot (252)(1).png")
+
 ### Features:
 
 Face detection using YOLOv8n-face model
