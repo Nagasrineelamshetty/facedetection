@@ -1,139 +1,56 @@
-Here is your complete and clean `README.md` file:
-
----
-
-```markdown
 # Face Detection and Recognition System
 
-This project is a complete face detection and recognition pipeline using **YOLOv8** for detection and **FaceNet** for recognition. It is designed to identify individuals even when they wear masks or caps. This was developed as part of an internship assignment by **Nagasri**.
+This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps. The project was developed by Nagasri as part of an internship assignment.
 
----
+Features:
 
-## Features
+Face detection using YOLOv8n-face model
 
-- Face detection using YOLOv8n-face model
-- Face recognition using FaceNet embeddings
-- Classification using KNN / SVM
-- Trained with variations: normal face, masked face, and capped face
-- 100% accuracy on a controlled test dataset
-- Streamlit app for easy image upload and face recognition
+Face recognition using FaceNet embeddings
 
----
+Classification using KNN or SVM
 
-## Tech Stack
+Trained on images with variations: normal face, masked face, and face with a cap
 
-```
+Achieved 100% accuracy on a small test dataset
 
-Programming Language : Python 3.10
-Face Detection       : YOLOv8n-face (Ultralytics)
-Face Embedding       : FaceNet (via keras-facenet)
-Classifier           : KNN / SVM (scikit-learn)
-Image Processing     : OpenCV
-Model Storage        : Joblib and NumPy
-Evaluation Metric    : Accuracy
-User Interface       : Streamlit (for deployment)
+Includes a simple image-based interface using Streamlit
 
-```
+Tech Stack
 
----
+Programming Language: Python 3.10
+Face Detection: YOLOv8n-face (Ultralytics)
+Face Embedding: FaceNet (via keras-facenet)
+Classifier: KNN / SVM (scikit-learn)
+Image Processing: OpenCV
+Model Storage: Joblib and NumPy
+Evaluation Metric: Accuracy
+User Interface: Streamlit
 
-## Folder Structure
+Folder Structure:
 
-```
+detect_faces_yolo.py – Detects and crops faces using YOLOv8
 
-facedetection/
-│
-├── detect\_faces\_yolo.py       # YOLOv8-based face detection script
-├── facenet\_embeddings.py      # Generate FaceNet embeddings from cropped faces
-├── train\_classifier.py        # Train the SVM/KNN face recognition model
-├── predict.py                 # Run predictions on test images
-├── app.py                     # Streamlit app for deployment
-│
-├── yolov8n-face-lindevs.pt    # Pretrained YOLOv8 face detection model
-├── face\_classifier.pkl        # Trained face recognition classifier
-├── embeddings.npy             # Stored FaceNet embeddings
-│
-├── dataset/                   # Raw images (normal, masked, capped)
-├── cropped\_faces/             # Detected and cropped faces
-├── uploads/                   # Uploaded images via Streamlit
-│
-├── requirements.txt           # Project dependencies
-└── README.md                  # Project documentation
+facenet_embeddings.py – Extracts 128-dimensional embeddings using FaceNet
 
-````
+train_classifier.py – Trains the face recognition classifier
 
----
+predict.py – Predicts the identity of a test image
 
-## Setup Instructions
+app.py – Streamlit interface for deployment
 
-1. **Clone the repository**  
-   ```bash
-   git clone <your-repo-url>
-   cd facedetection
-````
+yolov8n-face-lindevs.pt – Pretrained face detection model
 
-2. **Create and activate virtual environment**
+face_classifier.pkl – Saved trained classifier
 
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # For Windows
-   ```
+embeddings.npy – NumPy array containing FaceNet embeddings
 
-3. **Install dependencies**
+dataset/ – Contains training images (normal, masked, and capped)
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+cropped_faces/ – YOLO-detected cropped face images
 
-4. **Run the system step-by-step**
+uploads/ – Folder for uploaded images during Streamlit app testing
 
-   * Detect faces
+requirements.txt – Python package dependencies
 
-     ```bash
-     python detect_faces_yolo.py
-     ```
-
-   * Generate embeddings
-
-     ```bash
-     python facenet_embeddings.py
-     ```
-
-   * Train the classifier
-
-     ```bash
-     python train_classifier.py
-     ```
-
-   * Predict (optional test)
-
-     ```bash
-     python predict.py
-     ```
-
-   * Run the Streamlit app
-
-     ```bash
-     streamlit run app.py
-     ```
-
----
-
-## Notes
-
-* Ensure the YOLOv8 model file `yolov8n-face-lindevs.pt` is placed in the root folder.
-* The system works best when trained on at least 3 variations of each person (normal, masked, and capped).
-* Accuracy may vary based on dataset quality and variation handling.
-
----
-
-## Contact
-
-For any questions or improvements, feel free to reach out to **Nagasri**.
-
-```
-
----
-
-Let me know if you’d like me to generate the actual file or include it in your repo structure!
-```
+README.md – Project documentation
