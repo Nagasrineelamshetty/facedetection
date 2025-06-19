@@ -1,6 +1,6 @@
 # Face Detection and Recognition System
 
-This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps. The project was developed by Nagasri as part of an internship assignment.
+This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps.
 
 ### Features:
 
