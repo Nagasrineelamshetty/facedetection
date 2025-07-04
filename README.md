@@ -1,6 +1,7 @@
 # Face Detection and Recognition System
 
-This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps.
+This project is a complete face detection and recognition pipeline using YOLOv8 for detection and FaceNet for recognition. It is designed to accurately identify individuals even when they wear masks or caps and store the entry time logs in a CSV file
+
 
 ### Features:
 
@@ -12,7 +13,9 @@ Classification using KNN or SVM
 
 Trained on images with variations: normal face, masked face, and face with a cap
 
-Achieved 100% accuracy on a small test dataset
+Achieved 90% accuracy on the dataset
+
+Records entry logs into a CSV file
 
 ### Tech Stack:
 
@@ -41,6 +44,8 @@ facenet_embeddings.py – Extracts 128-dimensional embeddings using FaceNet
 train_classifier.py – Trains the face recognition classifier
 
 predict.py – Predicts the identity of a test image
+
+surveillance.py - Saves entry logs in live cam recording
 
 app.py – Streamlit interface for deployment
 
