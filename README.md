@@ -39,17 +39,29 @@ User Interface: Streamlit
 
 .
 ├── app.py                      # Streamlit interface for face recognition deployment
+
 ├── detect_faces_yolo.py       # Detects and crops faces using YOLOv8
+
 ├── facenet_embeddings.py      # Extracts 128D embeddings from cropped faces using FaceNet
+
 ├── train_classifier.py        # Trains the face recognition classifier using embeddings
+
 ├── predict.py                 # Predicts the identity of a test image using trained classifier
+
 ├── surveillance.py            # Logs entry/exit timestamps from live webcam feed
+
 ├── yolov8n-face-lindevs.pt    # Pretrained YOLOv8 face detection model
+
 ├── face_classifier.pkl        # Trained face recognition classifier (saved model)
+
 ├── embeddings.npy             # NumPy array of FaceNet embeddings
+
 ├── requirements.txt           # Python dependencies
+
 ├── README.md                  # Project documentation
-│
+
 ├── dataset/                   # Original training images (normal, masked, capped faces)
+
 ├── cropped_faces/             # YOLOv8-detected cropped face images
+
 ├── uploads/       
