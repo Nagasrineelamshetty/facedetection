@@ -37,30 +37,19 @@ User Interface: Streamlit
 
 ### Folder Structure:
 
-detect_faces_yolo.py – Detects and crops faces using YOLOv8
-
-facenet_embeddings.py – Extracts 128-dimensional embeddings using FaceNet
-
-train_classifier.py – Trains the face recognition classifier
-
-predict.py – Predicts the identity of a test image
-
-surveillance.py - Saves entry logs in live cam recording
-
-app.py – Streamlit interface for deployment
-
-yolov8n-face-lindevs.pt – Pretrained face detection model
-
-face_classifier.pkl – Saved trained classifier
-
-embeddings.npy – NumPy array containing FaceNet embeddings
-
-dataset/ – Contains training images (normal, masked, and capped)
-
-cropped_faces/ – YOLO-detected cropped face images
-
-uploads/ – Folder for uploaded images during Streamlit app testing
-
-requirements.txt – Python package dependencies
-
-README.md – Project documentation
+.
+├── app.py                      # Streamlit interface for face recognition deployment
+├── detect_faces_yolo.py       # Detects and crops faces using YOLOv8
+├── facenet_embeddings.py      # Extracts 128D embeddings from cropped faces using FaceNet
+├── train_classifier.py        # Trains the face recognition classifier using embeddings
+├── predict.py                 # Predicts the identity of a test image using trained classifier
+├── surveillance.py            # Logs entry/exit timestamps from live webcam feed
+├── yolov8n-face-lindevs.pt    # Pretrained YOLOv8 face detection model
+├── face_classifier.pkl        # Trained face recognition classifier (saved model)
+├── embeddings.npy             # NumPy array of FaceNet embeddings
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+│
+├── dataset/                   # Original training images (normal, masked, capped faces)
+├── cropped_faces/             # YOLOv8-detected cropped face images
+├── uploads/       
