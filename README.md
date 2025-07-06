@@ -37,8 +37,7 @@ User Interface: Streamlit
 
 ### Folder Structure:
 
-.
-├── app.py                      # Streamlit interface for face recognition deployment
+├── app.py                     # Streamlit interface for face recognition deployment
 
 ├── detect_faces_yolo.py       # Detects and crops faces using YOLOv8
 
